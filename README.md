@@ -69,7 +69,7 @@ IT1C_PythonProject_TheProgrammers/
 - Contributed: Database design, student record functions
 
 ## Screenshots/Pictures
-![Project Screenshot](https://www.canva.com/design/DAHJn5YHPXw/0HAAvE2vJFhofK9t8H2EPA/editscreenshot.png)
+![Project Screenshot](screenshot.png)
 
 ## Certificates or Achievements (Optional)
 - Academic Achiever 

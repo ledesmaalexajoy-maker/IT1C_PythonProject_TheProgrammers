@@ -65,8 +65,8 @@ IT1C_PythonProject_TheProgrammers/
 - Team Collaboration
 
 ## Projects and Contributions
-**Group Project:** IT1C_PythonProject_TheProgrammers
-- Contributed: Database design, student record functions
+**Group Project: Hitel Resrrvation Management Sytem** 
+Contributed: Database design, student record functions
 
 ## Screenshots/Pictures
 ![Project Screenshot](screenshot.png)

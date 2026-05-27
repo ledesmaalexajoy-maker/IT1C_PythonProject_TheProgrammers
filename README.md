@@ -1,63 +1,186 @@
 # IT1C_PythonProject_TheProgrammers
-Student Management System in Python
+A Simple Student Management System in Python
 
-├── source/main.py
-├── documentation/pseudocode.txt
-├── documentation/logic_explanation.txt
-├── images/screenshot1.png
-├── images/flowchart.png
+IT1C_PythonProject_TheProgrammers/
+│
+├── source/
+│ ├── main.py
+│ ├── utils.py
+│ └── assets/
+│
+├── documentation/
+│ ├── pseudocode.pdf
+│ ├── flowchart.png
+│ └── logic_explanation.docx
+│
+├── images/
+│ ├── screenshot1.png
+│ ├── screenshot2.png
+│ └── demo.gif
+│
 └── README.md
 
-import sqlite3
+## Group Members - The Programmers
+1. Khecy Lovely [Asis]
+2. Alexa Joy [Ledesma]
+3. Lorie Grace [Palasigue]
+4. Lemar [Eleazar]
+5. Li Andrey [Mampay]
+6. Isaiah [Natividad]
+**Section:** BSIT 1C 
 
-def create_table():
-    conn = sqlite3.connect('students.db')
-    c = conn.cursor()
-    c.execute('''CREATE TABLE IF NOT EXISTS students
-                 (id INTEGER PRIMARY KEY AUTOINCREMENT,
-                  name TEXT, course TEXT, year INTEGER)''')
-    conn.commit()
-    conn.close()
+# IT1C_Portfolio_Asis
 
-def add_student():
-    name = input("Name: "); course = input("Course: "); year = input("Year: ")
-    conn = sqlite3.connect('students.db')
-    c = conn.cursor()
-    c.execute("INSERT INTO students (name, course, year) VALUES (?,?,?)", (name, course, year))
-    conn.commit(); conn.close()
-    print("Added!")
+## Personal Information
+- **Name:**  
+- **Course:** BS Information Technology 1C
+- **Email:**  
+- **GitHub:** 
 
-def view_students():
-    conn = sqlite3.connect('students.db')
-    c = conn.cursor()
-    for row in c.execute("SELECT * FROM students"):
-        print(row)
-    conn.close()
+## Skills & Technologies
+- Python
+- GitHub
+- Team Collaboration
 
-def main():
-    create_table()
-    while True:
-        print("\n1.Add 2.View 3.Exit")
-        choice = input("Choice: ")
-        if choice=='1': add_student()
-        elif choice=='2': view_students()
-        else: break
+## Projects and Contributions
+**Group Project:** IT1C_PythonProject_TheProgrammers
+- Contributed: 
 
-if __name__ == "__main__": main()
+## Screenshots/Pictures
+![Project Screenshot](screenshot.png)
 
-BEGIN
-  CREATE table
-  WHILE True:
-    Show menu
-    IF choice=1: Add student
-    IF choice=2: View students
-    IF choice=3: Exit
-END
+## Certificates or Achievements (Optional)
 
-# IT1C Python Project - The Programmers
-Members: Alexa Joy Ledesma, Khecy lovely Asis, Lorie Grace Palasigue, Isaiah Natividad, Li Andrey Mampay, Lemar Eleazar
-Section: BSIT 1C
+# IT1C_Portfolio_Ledesma
 
-Run: python main.py sa /source folder
-![Flowchart](images/flowchart.png)
-![Screenshot](images/screenshot1.png)
+## Personal Information
+- **Name:** Alexa Joy Ledesma
+- **Course:** BS Information Technology 1C
+- **Email:** Ledesmaalexajoy@gmail.com 
+- **GitHub:** 
+
+## Skills & Technologies
+- Python
+- GitHub
+- Team Collaboration
+
+## Projects and Contributions
+**Group Project:** IT1C_PythonProject_TheProgrammers
+- Contributed: Database design, student record functions
+
+## Screenshots/Pictures
+![Project Screenshot](https://www.canva.com/design/DAHJn5YHPXw/0HAAvE2vJFhofK9t8H2EPA/editscreenshot.png)
+
+## Certificates or Achievements (Optional)
+- Academic Achiever 
+- Champion in Hiphop Dance (2025)
+
+# IT1C_Portfolio_Palasigue
+
+## Personal Information
+- **Name:**  
+- **Course:** BS Information Technology 1C
+- **Email:**  
+- **GitHub:** 
+
+## Skills & Technologies
+- Python
+- GitHub
+- Team Collaboration
+
+## Projects and Contributions
+**Group Project:** IT1C_PythonProject_TheProgrammers
+- Contributed: 
+
+## Screenshots/Pictures
+![Project Screenshot](screenshot.png)
+
+## Certificates or Achievements (Optional)
+
+# IT1C_Portfolio_Eleazar
+
+## Personal Information
+- **Name:**  
+- **Course:** BS Information Technology 1C
+- **Email:**  
+- **GitHub:** 
+
+## Skills & Technologies
+- Python
+- GitHub
+- Team Collaboration
+
+## Projects and Contributions
+**Group Project:** IT1C_PythonProject_TheProgrammers
+- Contributed: 
+
+## Screenshots/Pictures
+![Project Screenshot](screenshot.png)
+
+## Certificates or Achievements (Optional)
+
+# IT1C_Portfolio_Mampay
+
+## Personal Information
+- **Name:**  
+- **Course:** BS Information Technology 1C
+- **Email:**  
+- **GitHub:** 
+
+## Skills & Technologies
+- Python
+- GitHub
+- Team Collaboration
+
+## Projects and Contributions
+**Group Project:** IT1C_PythonProject_TheProgrammers
+- Contributed: 
+
+## Screenshots/Pictures
+![Project Screenshot](screenshot.png)
+
+## Certificates or Achievements (Optional)
+
+# IT1C_Portfolio_Natividad
+
+## Personal Information
+- **Name:**  
+- **Course:** BS Information Technology 1C
+- **Email:**  
+- **GitHub:** 
+
+## Skills & Technologies
+- Python
+- GitHub
+- Team Collaboration
+
+## Projects and Contributions
+**Group Project:** IT1C_PythonProject_TheProgrammers
+- Contributed: 
+
+## Screenshots/Pictures
+![Project Screenshot](screenshot.png)
+
+## Certificates or Achievements (Optional)
+
+# IT1C_Portfolio_Lastname
+
+## Personal Information
+- **Name:**  
+- **Course:** BS Information Technology 1C
+- **Email:**  
+- **GitHub:** 
+
+## Skills & Technologies
+- Python
+- GitHub
+- Team Collaboration
+
+## Projects and Contributions
+**Group Project:** IT1C_PythonProject_TheProgrammers
+- Contributed: 
+
+## Screenshots/Pictures
+![Project Screenshot](screenshot.png)
+
+## Certificates or Achievements (Optional)

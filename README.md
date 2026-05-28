@@ -81,28 +81,33 @@ Contributed: Database design, student record functions
 - Academic Achiever
 - cheer dance first runner up
 - Bench Cheering Champion
-- hip-hop Champion 
+- hip-hop Champion
+ 
 # IT1C_Portfolio_Eleazar
 
 ## Personal Information
 - **Name:**  Lemar Eleazar
 - **Course:** BS Information Technology 1C
 - **Email:**  eleazarlemar@gmail.com
-- **GitHub:** 
+- **GitHub:** https://github.com/eleazarlemar-svg
 
 ## Skills & Technologies
 - Python
 - GitHub
 - Team Collaboration
-
+- 
 ## Projects and Contributions
 **Group Project:** IT1C_PythonProject_TheProgrammers
-- Contributed: 
+- Contributed: Helped to edit/create design in canva
+- Helped to think for design in canva
+
 
 ## Screenshots/Pictures
 ![Project Screenshot](screenshot.png)
 
 ## Certificates or Achievements (Optional)
+- Academic Achiever 
+
 
 # IT1C_Portfolio_Mampay
 

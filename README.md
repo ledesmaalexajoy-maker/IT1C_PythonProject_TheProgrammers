@@ -60,9 +60,9 @@ Contributed: Database design, student record functions
 # IT1C_Portfolio_Palasigue
 
 ## Personal Information
-- **Name:**  
+- **Name:** lorie grace Palasigue 
 - **Course:** BS Information Technology 1C
-- **Email:**  
+- **Email:**  lorigrispalasigue@gamil.com 
 - **GitHub:** 
 
 ## Skills & Technologies
@@ -78,7 +78,10 @@ Contributed: Database design, student record functions
 ![Project Screenshot](screenshot.png)
 
 ## Certificates or Achievements (Optional)
-
+- Academic Achiever
+- cheer dance first runner up
+- Bench Cheering Champion
+- hip-hop Champion 
 # IT1C_Portfolio_Eleazar
 
 ## Personal Information

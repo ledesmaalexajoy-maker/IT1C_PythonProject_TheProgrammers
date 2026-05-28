@@ -1,14 +1,11 @@
-# IT1C_PythonProject_TheProgrammers
-A Simple Student Management System in Python
-
+# Hotel Reservation Management System
 ## Group Members - The Programmers
-1. Khecy Lovely [Asis]
-2. Alexa Joy [Ledesma]
-3. Lorie Grace [Palasigue]
-4. Lemar [Eleazar]
-5. Li Andrey [Mampay]
-6. Isaiah [Natividad]
-
+1. Khecy Lovely Asis
+2. Alexa Joy Ledesma
+3. Lorie Grace Palasigue
+4. Lemar Eleazar
+5. Li Andrey Mampay
+6. Isaiah Natividad
 ## Section: BSIT 1C 
 
 # IT1C_Portfolio_Asis
@@ -39,7 +36,7 @@ A Simple Student Management System in Python
 - **Name:** Alexa Joy Ledesma
 - **Course:** BS Information Technology 1C
 - **Email:** ledesmaalexajoy@gmail.com 
-- **GitHub:** 
+- **GitHub:** https://github.com/alydesma
 
 ## Skills & Technologies
 - Python
@@ -60,7 +57,7 @@ Contributed: Database design, student record functions
 # IT1C_Portfolio_Palasigue
 
 ## Personal Information
-- **Name:** lorie grace Palasigue 
+- **Name:** Lorie Grace Palasigue 
 - **Course:** BS Information Technology 1C
 - **Email:**  lorigrispalasigue@gamil.com 
 - **GitHub:** 

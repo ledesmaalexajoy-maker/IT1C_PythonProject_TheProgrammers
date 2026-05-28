@@ -116,7 +116,7 @@ def labeled_entry(parent, label, bg=BG, show=""):
                  highlightthickness=1, highlightbackground=GOLD, show=show)
     e.pack(fill="x", padx=24, ipady=8, pady=(2, 4))
     return var
-
+Lorie forwarded a message
 # ─────────────────────────────────── PAGES ───────────────────────────────────
 class LoginPage(tk.Frame):
     def __init__(self, parent, app, **kw):
@@ -319,6 +319,137 @@ class BookPage(tk.Frame):
         sub   = rate * nights
         tax   = int(sub * 0.20)
         total = sub + tax
+
+b = {"id": f"LV{1000 + len(bookings) + 1}", "name": name, "email": email,
+             "cin": cin, "cout": cout, "nights": nights, "guests": guests,
+             "room": room, "rate": rate, "sub": sub, "tax": tax,
+             "total": total, "status": "Confirmed",
+             "booked_on": str(datetime.date.today())}
+        bookings.append(b)
+
+        msg = (f"Booking Confirmed!\n\n"
+               f"Booking ID  : {b['id']}\n"
+               f"Room        : {room}\n"
+               f"Check-in    : {cin}\n"
+               f"Check-out   : {cout}\n"
+               f"Nights      : {nights}\n"
+               f"Guests      : {guests}\n"
+               f"Room Rate   : P{sub:,}\n"
+               f"Tax & Fees  : P{tax:,}\n"
+               f"TOTAL PAID  : P{total:,}")
+        messagebox.showinfo("Booking Confirmed!", msg)
+        self.app.go("Home")
+
+
+class ReservationsPage(tk.Frame):
+    def __init__(self, parent, app, **kw):
+        super().__init__(parent, bg=BG)
+        make_header(self, app, "Reservations", back="Home")
+        tk.Label(self, text="My Reservations", font=FH, bg=BG, fg=DARK).pack(pady=12)
+
+        canvas = tk.Canvas(self, bg=BG, bd=0, highlightthickness=0)
+        sb = ttk.Scrollbar(self, orient="vertical", command=canvas.yview)
+        inner = tk.Frame(canvas, bg=BG)
+        inner.bind("<Configure>",
+                   lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
+        canvas.create_window((0, 0), window=inner, anchor="nw", width=400)
+        canvas.configure(yscrollcommand=sb.set)
+        canvas.pack(side="left", fill="both", expand=True)
+        sb.pack(side="right", fill="y")
+
+        my = [b for b in bookings if b.get("email") == logged_user.get("email", "")]
+
+        if not my:
+            tk.Label(inner, text="No reservations yet.\nBook a room to get started!",
+                     font=FS, bg=BG, fg=MUTED, justify="center").pack(pady=50)
+        else:
+            for b in reversed(my):
+                card = tk.Frame(inner, bg=WHITE, pady=12, padx=16)
+                card.pack(fill="x", padx=12, pady=6)
+                tk.Label(card, text=f"  {b['room']}", font=("Helvetica", 12, "bold"),
+                         bg=WHITE, fg=DARK).pack(anchor="w")
+                tk.Label(card, text=f"  {b['cin']}  to  {b['cout']}  ({b['nights']} nights)",
+                         font=FL, bg=WHITE, fg=MUTED).pack(anchor="w")
+                tk.Label(card, text=f"  Guests: {b['guests']}   ID: {b['id']}",
+                         font=FL, bg=WHITE, fg=MUTED).pack(anchor="w")
+                color = GREEN if b["status"] == "Confirmed" else RED
+                tk.Label(card, text=f"  {b['status']}   P{b['total']:,}",
+                         font=("Helvetica", 10, "bold"), bg=WHITE, fg=color).pack(anchor="w", pady=(4, 0))
+        make_nav(self, app)
+
+
+class RoomsPage(tk.Frame):
+    def __init__(self, parent, app, **kw):
+        super().__init__(parent, bg=BG)
+        make_header(self, app, "Rooms", back="Home")
+        tk.Label(self, text="Room Rates", font=("Georgia", 17, "bold"),
+                 bg=BG, fg=GOLD).pack(pady=(10, 2))
+        tk.Label(self, text="Stay in Luxury, Wake up to the View",
+                 font=FL, bg=BG, fg=MUTED).pack()
+
+        canvas = tk.Canvas(self, bg=BG, bd=0, highlightthickness=0)
+        sb = ttk.Scrollbar(self, orient="vertical", command=canvas.yview)
+        inner = tk.Frame(canvas, bg=BG)
+        inner.bind("<Configure>",
+                   lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
+        canvas.create_window((0, 0), window=inner, anchor="nw", width=400)
+        canvas.configure(yscrollcommand=sb.set)
+        canvas.pack(side="left", fill="both", expand=True, pady=6)
+        sb.pack(side="right", fill="y")
+
+        data = [
+            ("Twin Room",       "2 Single Beds",            "Max 2 Adults",          4500),
+            ("Queen Room",      "1 Queen Bed + Balcony",    "Max 2 Adults + 1 Kid",  6000),
+            ("Triple Room",     "1 Queen + 1 Single",       "Max 3 Adults",          7500),
+            ("Triple Room XL",  "3 Single + 1 Queen",       "Max 3 Adults + 1 Kid",  8500),
+            ("Deluxe Ocean View","1 King Bed, Ocean View",  "Max 2 Adults",         10000),
+            ("Family Room",     "2 Queen + 1 Single",       "Max 6 Adults + 2 Kids",14000),
+        ]
+        for name, beds, occ, price in data:
+            card = tk.Frame(inner, bg=WHITE, pady=10, padx=14)
+            card.pack(fill="x", padx=10, pady=5)
+            top = tk.Frame(card, bg=WHITE); top.pack(fill="x")
+            tk.Label(top, text=f"  {name}", font=("Helvetica", 12, "bold"),
+                     bg=WHITE, fg=DARK).pack(side="left")
+            tk.Label(top, text=f"P{price:,}/night", font=("Helvetica", 11, "bold"),
+                     bg=WHITE, fg=GOLD).pack(side="right")
+            tk.Label(card, text=f"   {beds}  |  {occ}",
+                     font=FL, bg=WHITE, fg=MUTED).pack(anchor="w")
+            tk.Label(card, text="   Free WiFi  |  Air-Con  |  Mini Fridge  |  Toiletries",
+                     font=("Helvetica", 😎, bg=WHITE, fg=MUTED).pack(anchor="w")
+            tk.Button(card, text="Book This Room", font=FL, bg=GOLD, fg=WHITE,
+                      bd=0, cursor="hand2", padx=8, pady=4,
+                      command=lambda p=name: app.go("Book")).pack(anchor="e", pady=(4, 0))
+        make_nav(self, app)
+
+
+class SpaPage(tk.Frame):
+    def __init__(self, parent, app, **kw):
+        super().__init__(parent, bg=BG)
+        make_header(self, app, "Spa", back="Home")
+        tk.Label(self, text="Spa & Wellness", font=("Georgia", 17, "bold"),
+                 bg=BG, fg=DARK).pack(pady=(12, 2))
+        tk.Label(self, text="Relax. Rejuvenate. Restore.",
+                 font=FL, bg=BG, fg=MUTED).pack()
+
+        spa_items = [
+            ("Wellness Massage",    "Relieve stress and improve circulation.",    "P1,800/session"),
+            ("Signature Facial",    "Deep cleanse and skin revitalization.",      "P2,200/session"),
+            ("Aromatherapy Massage","Essential oils for mind and body balance.",  "P2,000/session"),
+            ("Hot Stone Therapy",   "Relaxes muscles and enhances relaxation.",   "P2,500/session"),
+            ("Sauna and Steam",     "Detoxify and improve blood circulation.",    "P1,200/session"),
+        ]
+        for name, desc, price in spa_items:
+            card = tk.Frame(self, bg=WHITE, pady=12, padx=16)
+            card.pack(fill="x", padx=18, pady=5)
+            top = tk.Frame(card, bg=WHITE); top.pack(fill="x")
+            tk.Label(top, text=name, font=("Helvetica", 11, "bold"),
+                     bg=WHITE, fg=DARK).pack(side="left")
+            tk.Label(top, text=price, font=("Helvetica", 10, "bold"),
+                     bg=WHITE, fg=GOLD).pack(side="right")
+            tk.Label(card, text=desc, font=FL, bg=WHITE, fg=MUTED, anchor="w").pack(fill="x")
+        make_nav(self, app)
+
 class CheckinPage(tk.Frame):
     def __init__(self, parent, app, **kw):
         super().__init__(parent, bg=BG)
@@ -519,6 +650,7 @@ class ProfilePage(tk.Frame):
         if messagebox.askyesno("Log Out", "Are you sure you want to log out?"):
             logged_user.clear()
             self.app.go("Login")
+
 # ─────────────────────────────────── MAIN ────────────────────────────────────
 if _name_ == "_main_":
     users["demo@luxevista.com"] = {

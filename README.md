@@ -126,9 +126,9 @@ Contributed: Database design, student record functions
 # IT1C_Portfolio_Natividad
 
 ## Personal Information
-- **Name:**  
+- **Name:**  Isaiah Natividad
 - **Course:** BS Information Technology 1C
-- **Email:**  
+- **Email:**  acenatividad11@gmail.com
 - **GitHub:** 
 
 ## Skills & Technologies

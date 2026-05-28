@@ -1,25 +1,6 @@
 # IT1C_PythonProject_TheProgrammers
 A Simple Student Management System in Python
 
-IT1C_PythonProject_TheProgrammers/
-│
-├── source/
-│ ├── main.py
-│ ├── utils.py
-│ └── assets/
-│
-├── documentation/
-│ ├── pseudocode.pdf
-│ ├── flowchart.png
-│ └── logic_explanation.docx
-│
-├── images/
-│ ├── screenshot1.png
-│ ├── screenshot2.png
-│ └── demo.gif
-│
-└── README.md
-
 ## Group Members - The Programmers
 1. Khecy Lovely [Asis]
 2. Alexa Joy [Ledesma]
@@ -27,7 +8,8 @@ IT1C_PythonProject_TheProgrammers/
 4. Lemar [Eleazar]
 5. Li Andrey [Mampay]
 6. Isaiah [Natividad]
-**Section:** BSIT 1C 
+
+## Section: BSIT 1C 
 
 # IT1C_Portfolio_Asis
 

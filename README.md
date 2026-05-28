@@ -150,3 +150,34 @@ Contributed: Database design, student record functions
 
 ## Certificates or Achievements (Optional)
 
+## 📖 Project Description
+The Hotel Reservation Management System is a booking application designed to allow users to reserve hotel rooms efficiently. The system enables users to select check-in and check-out dates, number of guests, available rooms, and optional services such as spa. It validates user inputs, checks room availability, calculates total cost, and confirms reservations.
+
+---
+
+## ✨ Features
+- User-friendly booking interface
+- Check-in and check-out date selection
+- Guest number input
+- Room availability checking
+- Room and spa service selection
+- Automatic total cost calculation
+- Booking confirmation
+
+---
+
+## 🛠 Technologies / Libraries Used
+- Canva (UI Design)
+- Python (Program Logic – Conceptual)
+- GitHub (Version Control & Repository)
+- PDF Documentation (Flowchart & Program Logic)
+
+---
+
+## 📄 Project Documentation (PDF)
+The system flowchart and booking process are documented in PDF format.
+
+- 📘 *Flowchart PDF:*  
+  [Hotel Reservation Management System Flowchart](documentation/Hotel_Reservation_Flowchart.pdf)
+
+This document illustrates the step-by-step booking process, decision points, and overall system flow.

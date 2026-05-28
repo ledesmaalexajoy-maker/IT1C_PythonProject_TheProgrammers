@@ -14,7 +14,7 @@
 - **Name:**  Khecy Lovely Asis
 - **Course:** BS Information Technology 1C
 - **Email:**  asiskhecy@gmail.com
-- **GitHub:** 
+- **GitHub:** https://github.com/khecycute
 
 ## Skills & Technologies
 - Python

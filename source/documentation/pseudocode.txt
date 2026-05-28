@@ -1,1 +1,38 @@
+Hotel Reservation Management System
+1.	System Overview
+The Hotel Reservation Management System allows users to book hotel rooms by selecting check-in date, check-out date, number of guests, and preferred services such as rooms and spa. The system validates availability, calculates cost, and confirms the reservation.
+2.	Pseudocode
+START
+Display Home Screen
+User selects Check-in Date
+User selects Check-out Date
+User enters Number of Guests
+IF dates are valid THEN
+Display available rooms
+User selects room type
+User selects additional services (optional)
+Calculate total cost
+Display booking summary
+IF user confirms booking THEN
+Save reservation details
+Display booking confirmation
+ELSE
+Cancel booking
+ENDIF
+ELSE
+Display error message
+ENDIF END
+3.	Algorithm / Flowchart Description
+•	Start the system
+•	Display the hotel booking interface
+•	Input check-in, check-out, and guest count
+•	Validate dates and guest capacity
+•	Check room availability
+•	Allow user to choose room and services
+•	Compute total price
+•	Confirm booking
+•	Store reservation and notify user
+•	End process
+4.	Program Logic Explanation
+The program starts by showing the main booking interface. The user inputs the check-in and check-out dates along with the number of guests. The system checks if the dates are valid and ensures room availability. Once validated, the user selects a room type and optional services like spa. The system calculates the total cost based on the selections. If the user confirms the booking, the reservation is saved and a confirmation message is displayed. If not, the booking process is cancelled.
 

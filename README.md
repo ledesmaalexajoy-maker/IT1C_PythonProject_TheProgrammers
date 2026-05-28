@@ -27,7 +27,8 @@
 
 
 ## Screenshots/Pictures
-![Project Screenshot](screenshot.png)
+![Project Screenshot](screenshot.png)<img width="1536" height="1024" alt="ae457ba3-9a2d-4d78-9628-e1c503a3dd4c" src="https://github.com/user-attachments/assets/8dfd56eb-2c54-4c41-a127-9e1a4f43f36b" />
+
 
 ## Certificates or Achievements (Optional)
 - DLC Champion

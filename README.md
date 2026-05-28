@@ -129,7 +129,7 @@ Contributed: Database design, student record functions
 - **Name:**  Isaiah Natividad
 - **Course:** BS Information Technology 1C
 - **Email:**  acenatividad11@gmail.com
-- **GitHub:** 
+- **GitHub:** https://github.com/isaiahisaiah-isaiah
 
 ## Skills & Technologies
 - Python

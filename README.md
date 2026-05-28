@@ -174,6 +174,29 @@ The Hotel Reservation Management System is a booking application designed to all
 
 ---
 
+### 🛠 Installation Guide
+1. Download or clone the project repository from GitHub.
+2. Extract the project files (if downloaded as ZIP).
+3. Open the project folder on your computer.
+4. Make sure all required folders are present:
+   - images/
+   - documentation/
+   - source/
+5. Open the PDF documentation inside the documentation folder to review the system flowchart and program logic.
+
+---
+
+### ▶️ How to Run the Program
+1. Open the Hotel Reservation Management System design or prototype (Canva-based UI).
+2. Start the booking process from the Home or Book Now screen.
+3. Select the check-in date and check-out date.
+4. Enter the number of guests.
+5. Choose an available room and optional services such as spa.
+6. Review the booking summary and total cost.
+7. Confirm the booking to complete the reservation.
+8. The system will display a booking confirmation message.
+
+
 ## 📄 Project Documentation (PDF)
 The system flowchart and booking process are documented in PDF format.
 
@@ -181,3 +204,18 @@ The system flowchart and booking process are documented in PDF format.
   [Hotel Reservation Management System Flowchart](documentation/Hotel_Reservation_Flowchart.pdf)
 
 This document illustrates the step-by-step booking process, decision points, and overall system flow.
+
+## 📸 Project Screenshots
+
+### Home Screen
+![Home Screen](images/home_screen.png)
+
+### Check-in / Check-out
+![Check In Out](images/check_in_out.png)
+
+### Room Selection
+![Room Selection](images/room_selection.png)
+
+### Booking Confirmation
+![Confirmation](images/booking_confirmation.png)
+ 

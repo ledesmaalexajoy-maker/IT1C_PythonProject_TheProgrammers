@@ -104,9 +104,9 @@ Contributed: Database design, student record functions
 # IT1C_Portfolio_Mampay
 
 ## Personal Information
-- **Name:**  
+- **Name:**  Li Andrey Mampay
 - **Course:** BS Information Technology 1C
-- **Email:**  
+- **Email:**  manpaycarlooo@gmail.com
 - **GitHub:** 
 
 ## Skills & Technologies

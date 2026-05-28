@@ -60,7 +60,7 @@ Contributed: Database design, student record functions
 - **Name:** Lorie Grace Palasigue 
 - **Course:** BS Information Technology 1C
 - **Email:**  lorigrispalasigue@gamil.com 
-- **GitHub:** 
+- **GitHub:** https://github.com/lorigris
 
 ## Skills & Technologies
 - Python

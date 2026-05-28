@@ -82,9 +82,9 @@ Contributed: Database design, student record functions
 # IT1C_Portfolio_Eleazar
 
 ## Personal Information
-- **Name:**  
+- **Name:**  Lemar Eleazar
 - **Course:** BS Information Technology 1C
-- **Email:**  
+- **Email:**  eleazarlemar@gmail.com
 - **GitHub:** 
 
 ## Skills & Technologies

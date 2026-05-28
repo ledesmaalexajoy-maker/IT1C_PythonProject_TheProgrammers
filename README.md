@@ -112,7 +112,7 @@ Contributed: Database design, student record functions
 - **Name:**  Li Andrey Mampay
 - **Course:** BS Information Technology 1C
 - **Email:**  manpaycarlooo@gmail.com
-- **GitHub:** 
+- **GitHub:** https://github.com/runayasibbbbbb
 
 ## Skills & Technologies
 - Python
@@ -121,13 +121,16 @@ Contributed: Database design, student record functions
 
 ## Projects and Contributions
 **Group Project:** IT1C_PythonProject_TheProgrammers
-- Contributed: 
+- I edited using Canva and I fixed the code for the buttons to function.
 
 ## Screenshots/Pictures
 ![Project Screenshot](screenshot.png)
 
 ## Certificates or Achievements (Optional)
-
+-2x Mvp basketball U17 category
+-3x player of palarong panlalawigan
+-Back to back Champion hip-hop dance contest in culminating activity last year
+-With honors grade7-grade12
 # IT1C_Portfolio_Natividad
 
 ## Personal Information

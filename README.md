@@ -56,7 +56,7 @@ IT1C_PythonProject_TheProgrammers/
 ## Personal Information
 - **Name:** Alexa Joy Ledesma
 - **Course:** BS Information Technology 1C
-- **Email:** Ledesmaalexajoy@gmail.com 
+- **Email:** ledesmaalexajoy@gmail.com 
 - **GitHub:** 
 
 ## Skills & Technologies
@@ -65,7 +65,7 @@ IT1C_PythonProject_TheProgrammers/
 - Team Collaboration
 
 ## Projects and Contributions
-**Group Project: Hitel Resrrvation Management Sytem** 
+**Group Project: Hotel Resrrvation Management Sytem** 
 Contributed: Database design, student record functions
 
 ## Screenshots/Pictures
@@ -163,24 +163,3 @@ Contributed: Database design, student record functions
 
 ## Certificates or Achievements (Optional)
 
-# IT1C_Portfolio_Lastname
-
-## Personal Information
-- **Name:**  
-- **Course:** BS Information Technology 1C
-- **Email:**  
-- **GitHub:** 
-
-## Skills & Technologies
-- Python
-- GitHub
-- Team Collaboration
-
-## Projects and Contributions
-**Group Project:** IT1C_PythonProject_TheProgrammers
-- Contributed: 
-
-## Screenshots/Pictures
-![Project Screenshot](screenshot.png)
-
-## Certificates or Achievements (Optional)

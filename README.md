@@ -11,9 +11,9 @@
 # IT1C_Portfolio_Asis
 
 ## Personal Information
-- **Name:**  
+- **Name:**  Khecy Lovely Asis
 - **Course:** BS Information Technology 1C
-- **Email:**  
+- **Email:**  asiskhecy@gmail.com
 - **GitHub:** 
 
 ## Skills & Technologies
@@ -23,12 +23,16 @@
 
 ## Projects and Contributions
 **Group Project:** IT1C_PythonProject_TheProgrammers
-- Contributed: 
+- Contributed: Helped create ideas for the design and assisted in making the system
+
 
 ## Screenshots/Pictures
 ![Project Screenshot](screenshot.png)
 
 ## Certificates or Achievements (Optional)
+- DLC Champion
+- Academic Achiever
+- Hiphop Dance Champion 
 
 # IT1C_Portfolio_Ledesma
 

@@ -69,7 +69,7 @@ Contributed: Database design, student record functions
 
 ## Projects and Contributions
 **Group Project:** IT1C_PythonProject_TheProgrammers
-- Contributed: 
+- Contributed:Contributed screenshots and documentation, helped design canva 
 
 ## Screenshots/Pictures
 ![Project Screenshot](screenshot.png)
